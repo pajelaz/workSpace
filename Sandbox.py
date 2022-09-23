@@ -1,6 +1,22 @@
-# CHALLENGE 1: You have a list of item numbers, 
-# but each of them start with a 4-character code. 
-# You want to remove the characters so you can store them as an integer data type when you move it to the database.  
-# Using what you learned about slicing strings before this session, 
-# write code in your interactive python shell to remove the first four characters from this item number: 
-# TARG46464646
+search = 'd2b'
+
+while search == "d2b":
+    dec2bin = input("\nDecimal Value: ")
+    try:
+        dec2bin = int(dec2bin)
+    except ValueError:
+        pass
+    else:
+        print("Binary Value: " + "{0:b}".format(dec2bin))
+        continue
+
+    try:
+        dec2bin = float(dec2bin)
+    except ValueError:
+        pass
+    else:
+        #code for float to binary goes here
+        continue
+
+    if dec2bin == "back":
+        search = 0
