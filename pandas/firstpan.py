@@ -21,5 +21,5 @@ maindf = pd.read_csv("income_threshold.csv")
 #this prints (num of rows, num of columns)
 #print(maindf.shape)
 
-
-print(maindf.dtypes)
+#this prints out the columns and their data types. 
+#print(maindf.dtypes)
