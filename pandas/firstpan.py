@@ -8,7 +8,7 @@ wish me luck
 
 """
 
-import pandas as pd 
+import pandas as pd
 
 maindf = pd.read_csv("income_threshold.csv")
 
@@ -22,4 +22,4 @@ maindf = pd.read_csv("income_threshold.csv")
 #print(maindf.shape)
 
 #this prints out the columns and their data types. 
-#print(maindf.dtypes)
+print(maindf.dtypes)
