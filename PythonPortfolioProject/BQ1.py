@@ -13,5 +13,8 @@ import pandas as pd
 import matplotlib as mb 
 #import numpy as np 
 
-inc = pd.read_csv('income_threshold.csv')
-print(inc.to_string())
+inc = pd.read_csv('/Users/zpajela/Documents/My VSCode Repo/workSpace/workSpace/PythonPortfolioProject/income_threshold.csv')
+#inc = pd.read_csv("income_threshold.csv")
+
+print(inc.head(5))
+
