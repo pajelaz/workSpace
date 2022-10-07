@@ -10,11 +10,12 @@ Business Question: How can we create visuals that help represent the unequal pay
 """
 
 import pandas as pd 
-import matplotlib as mb 
-#import numpy as np 
+import matplotlib.pyplot as plt
+import numpy as np 
+import os
 
-inc = pd.read_csv('/Users/zpajela/Documents/My VSCode Repo/workSpace/workSpace/PythonPortfolioProject/income_threshold.csv')
-#inc = pd.read_csv("income_threshold.csv")
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+inc = pd.read_csv(__location__ + '/income_threshold.csv')
 
-print(inc.head(5))
-
+plt.bar(inc.sex, inc.fnlwgt)
+plt.show()
