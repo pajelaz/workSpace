@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout Task</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+<body>
+
+  <div class="logo">
+    My exciting website!
+  </div>
+
+<header>
+  <nav>
+    <ul class="container">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="websiteForm.html">Form</a>
+      </li>
+      <li>
+        <a href="">About us</a>
+      </li>
+      <li>
+        <a href="">Our history</a>
+      </li>
+      <li>
+        <a href="">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="grid">
+
+    <article>
+
+        <h1></h1>
+
+      <form action="/action_page.php" method="post">
+        <h1>
+            <center>Introductory Form</center>
+        </h1>
+        <ul>
+          <li>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="user_firstName" />
+          </li>
+          <li>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="user_lastName" />
+          </li>
+          <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <fieldset>
+            <legend>Gender:</legend>
+            <ul>
+              <li>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" checked />
+              </li>
+              <li>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" />
+              </li>
+              <li>
+                <label for="non">Prefer not to answer</label>
+                <input type="radio" id="non" name="gender" value="non" />
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Select all of the devices you have used:</legend>
+            <ul>
+              <li>
+                <label for="decomputer">Desktop Computer</label>
+                <input
+                  type="checkbox"
+                  id="decomputer"
+                  name="devices"
+                  value="decomputer"
+                  checked />
+              </li>
+              <li>
+                <label for="lacomputer">Laptop Computer</label>
+                <input type="checkbox" id="lacomputer" name="devices" value="lacomputer" />
+              </li>
+              <li>
+                <label for="smartphone">Smartphone</label>
+                <input type="checkbox" id="smartphone" name="devices" value="smartphone" />
+              </li>
+              <li>
+                <label for="tablet">Tablet</label>
+                <input type="checkbox" id="tablet" name="devices" value="tablet" />
+              </li>
+              <li>
+                <label for="none">None</label>
+                <input type="checkbox" id="none" name="devices" value="none" />
+              </li>
+            </ul>
+          </fieldset>
+          
+          <li>
+            <label for="meal">Preferred Meal</label>
+            <select id="meale" name="meal">
+                <option selected>Beef</option>
+                <option>Vegetarian</option>
+                <option>Chicken</option>
+                <option>Fish</option>
+
+             </select>
+          </li>
+
+          <li>
+            <label for="msg">Special Instructions:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Submit</button>
+          </li>
+        </ul>
+
+      </form>
+
+    </article>
+
+    
+  </main>
+
+</body>
+
+</html>

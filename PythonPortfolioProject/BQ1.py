@@ -17,5 +17,5 @@ import os
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 inc = pd.read_csv(__location__ + '/income_threshold.csv')
 
-plt.bar(inc.sex, inc.fnlwgt)
+#plt.bar(inc.sex, inc.)
 plt.show()
